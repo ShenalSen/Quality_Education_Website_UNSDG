@@ -1,0 +1,42 @@
+.product {
+    width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 40px 20px 80px 20px;
+    float: left;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Adding a box-shadow to give the product a raised appearance */
+}
+
+.labelOrder {
+    margin-top: 20px;
+    padding-top: 12px;
+    width: 258px;
+    background-color: #ccc;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px; /* Adding rounded corners to the labelOrder element */
+    margin-left: 30px; /* Adding a left margin to the labelOrder element for better layout */
+}
+
+#order {
+    height: 140px;
+    margin: auto;
+    overflow-y: auto;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin-left: 30px; */
+}
+
+#orderDescription {
+    font-size: 16px;
+    height: 140px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
