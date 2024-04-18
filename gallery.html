@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <!-- <link rel="stylesheet" href="Home.css"> -->
+   
+
+</head>
+<body>
+
+    <div class="font_bgclr">
+        <div class="container_1">
+            <span id='1' onclick="color(this)" class='color clr1'></span>
+            <span id='2' onclick="color(this)" class='color clr2'></span>
+            <span onclick="color(this)" class='color clr3'></span>
+            <span onClick="color(this)" class='color clr4'></span>
+        </div>
+
+        <select id="fontSelector" class="fontSelector">
+            <option value="Arial, Helvetica, sans-serif">Arial</option>
+            <option value="Times New Roman, Times, serif">Times New Roman</option>
+            <option value="Verdana, Geneva, sans-serif">Verdana</option>
+            <!-- Add more font options here as needed -->
+        </select>
+    </div>
+      
+
+    <div>
+        <h1 class="h1">Gallery</h1>
+    </div>
+    <div class="container">
+        <div class="gallery">
+
+            <div class="grid-item" onclick="showDetails('images/dance for education_0.png.jpg.webp', 'As the African Union celebrates 2024 as year of education, UNESCO has teamed up with the internationally acclaimed Ivorian band, Magic System, to launch a new version of the band’s hit song ‘Magic in the Air’.')">
+                <a>
+                    <img src="images/dance for education_0.png.jpg.webp" alt="Thumbnail 1">
+                </a>
+            </div>
+
+            <div class="grid-item" onclick="showDetails('images/Pchopra.jpg', 'Priyanka Chopra, UNICEF Goodwill Ambassador, makes remarks during the event on “Financing the Future: Education 2030”. UN Photo/Rick Bajornas')">
+                <a>
+                    <img src="images/Pchopra.jpg" alt="Thumbnail 2">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/education for peace recommendation.jpg.webp', 'Education is often seen as a key factor in promoting peace and stability, as it fosters understanding, tolerance, and cooperation among diverse communities.')">
+                <a>
+                    <img src="images/education for peace recommendation.jpg.webp" alt="Thumbnail 3">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/10-30-2015Iraq_School (1).jpg', 'Blaming just the teacher or the school for systemic educational problems can have serious negative side effects, warns a new report from the United Nations educational agency.')">
+                <a>
+                    <img src="images/10-30-2015Iraq_School (1).jpg" alt="Thumbnail 4" class="image" id="image">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/Malala Yusuf.jpg', 'Malala Yousafzai (right), UN Messenger of Peace, Nobel Prize laureate, and founder of the Malala Fund, makes remarks at the high-level event on “Financing the Future: Education 2030”. UN Photo/Rick Bajornas')">
+                <a>
+                    <img src="images/Malala Yusuf.jpg" alt="Thumbnail 5">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/MicrosoftTeams-image (30)_0.png.jpg.webp', 'Ground Picture/Shutterstock.comAI: UNESCO mobilizes education ministers from around the world for a co-ordinated response to ChatGPT .')">
+                <a>
+                    <img src="images/MicrosoftTeams-image (30)_0.png.jpg.webp" alt="Thumbnail 6">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/734259-education-2030-event.jpg', 'World leaders today pledged to tackle the education crisis that is holding back millions of children and threatening economic development, at a high-level event at United Nations Headquarters in New York aimed at securing finance for this critical goal.')">
+                <a>
+                    <img src="images/734259-education-2030-event.jpg" alt="Thumbnail 7">
+                </a>
+            </div>
+            
+            <div class="grid-item" onclick="showDetails('images/education inclusion (1).png.jpg.webp', 'Inclusive education promotes equal opportunities for all learners, regardless of their background, abilities, or differences. It aims to create supportive learning environments that cater to diverse needs and foster a sense of belonging and acceptance.')">
+                <a>
+                    <img src="images/education inclusion (1).png.jpg.webp" alt="Thumbnail 8">
+                </a>
+            </div>
+
+            <div class="grid-item" onclick="showDetails('images/thomas-and-sdgs.jpg', 'New York, 14 October 2017—The United Nations and Mattel, Inc., today announced at MIPJunior in Cannes, France, details of their collaboration to incorporate a number of the Sustainable Development Goals into the storylines of the animated children’s television series Thomas & Friends™.')">
+                <a>
+                    <img src="images/thomas-and-sdgs.jpg" alt="Thumbnail 9">
+                </a>
+            </div>
+
+            <div class="grid-item" onclick="showDetails('images/digitaleducation-c-bodom-Shutterstock.jpg-ezgif.com-webp-to-jpg-converter.jpg', 'Digital learning and transformation of education Open digital learning opportunities for all')">
+                <a>
+                    <img src="images/digitaleducation-c-bodom-Shutterstock.jpg-ezgif.com-webp-to-jpg-converter.jpg" alt="Thumbnail 10">
+                </a>
+            </div>
+
+            <div class="grid-item" onclick="showDetails('images/On+the+Road+to+COP28.jpeg', 'On the road to COP28 Webinars organized from May to December 2023')">
+                <a>
+                    <img src="images/On+the+Road+to+COP28.jpeg" alt="Thumbnail 11">
+                </a>
+            </div>
+
+            <div class="grid-item" onclick="showDetails('images/Nigeria_BokoHaram_2016UN038.jpg', 'Over half of schools remain closed in epicentre of Boko Haram crisis in Nigeria - UNICEF')">
+                <a>
+                    <img src="images/Nigeria_BokoHaram_2016UN038.jpg" alt="Thumbnail 12">
+                </a>
+            </div>
+            
+                      
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideDetails()">&times;</span>
+            <img class="full-image" id="fullImage" src="" alt="Full Image">
+            <div class="description" id="description"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+        <img src ="logo.png" class ="logo" style="padding-left: 25px;">
+            <ul>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="Home.html">Home</a></li1>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="AboutUs.html">About Us</a></li1>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="Shop.html">Shop</a></li1>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="Gallery.html">Gallery</a></li1>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="Site Map.html">Site Map</a></li1>
+                <li1 style="font-family: Arial, Helvetica, sans-serif;"><a href="Quiz.html">User Profile</a></li1>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class = "footer-container">
+        <div class = "footer-logo">
+            <img src ="logo.png" class ="footer-logo">
+        </div>
+
+        <div class = "footer-column1">
+            <h2>ABOUT</h2>
+            <a href="Home.html">Home</a>
+            <a href="AboutUs.html">About Us</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="student_4.html">Editor's Page</a>
+        </div>
+
+        <div class = "footer-column2">
+            <h2>CONTACT</h2>
+            <p3>23/1A, 1st Floor</p3>
+            <p3>Hampdon Lane,</p3>
+            <p3>Bamabalapitiya,</p3>
+            <p3>Colombo 04</p3>
+            <br>
+            <p3>+94 11 278 2343</p3>
+            <p3>PrimeED@gmail.com</p3>
+        </div>
+
+        <div class = "footer-column3">
+            <h2>FEEDBACK FORM</FORM></h2>
+            <button id="FeedBackForm" onclick="window.location.href='FeedBack_Form.html'"">Feedback Form</button>
+        </div>
+    </div>
+    <script src="gallery.js"></script>
+
+
+    
+</body>
+</html>
+
+
+
