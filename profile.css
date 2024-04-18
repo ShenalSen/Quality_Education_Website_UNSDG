@@ -1,0 +1,286 @@
+body {
+    background-color: rgb(230, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar {
+    position: fixed;
+    height: 120px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c22133;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-left: 0%;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+li1{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	display: inline-block;
+	padding: 20px 35px;
+}
+
+.userprofile {
+
+	font-weight: 200;
+}
+
+li1 a{
+	display:inline-block;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+
+li1 a:hover {
+	color: #000000;
+}
+
+.footer-container {
+	font-size: 16px;
+	background-color: #c22133;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
+	display: flex;
+}
+
+
+
+
+.footer {
+	background-color:black;
+	width: 80%;
+	height: 40vh;
+	color: #ddd;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+
+.footer-logo {
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 70px;
+	cursor: pointer;
+}
+
+
+.footer-column1 {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-right: 100px;
+}
+
+
+.footer-column1 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #000000;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-left: 70px;
+	margin-right: 100px;
+	color: #f6f1f1;
+}
+
+
+.footer-column2 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+
+.footer-column2 a:hover {
+	color: #000000;;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column3 {
+    text-align: center;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 200px;
+}
+
+
+.footer-column3 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+	margin-right: 5px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3d153;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.logo {
+    width: 165px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+}
+
+
+.portfolio {
+    text-align: center; /* To center the text */
+    margin-top: 140px; /* To add 100px space from the top */
+    margin-right: 125px; /* To push the text 50px from the left side */
+    font-size: 45px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+}
+
+.detel{
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.detel h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgb(120, 14, 14);
+}
+
+.detel p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detel a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px o;
+    border-radius: 5px;
+}
+
+.images{
+    width: 36%;
+    height: 64%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    top: 20%;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .person{
+    left: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+    .images {
+        width: 90%; 
+        height: auto;
+        position: static; 
+        margin: 0 auto; 
+        transform: none; 
+        right: auto; 
+    }
+
+    .images img {
+        height: auto; 
+        position: static; 
+        left: auto; 
+        bottom: 0; 
+        transform: none; 
+        transition: none; 
+    }
+}
+
+.para p {
+    color: black;
+}
