@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build user profile</title>
+    <link rel="stylesheet" href="Quiz.css">
+</head>
+<section class = header>
+    <header>
+        <nav class="navbar">
+        <img src ="logo.png" class ="logo" style="padding-left: 25px;">
+            <ul>
+                <li1><a href="Home.html">Home</a></li1>
+                <li1><a href="AboutUs.html">About Us</a></li1>
+                <li1><a href="Shop.html">Shop</a></li1>
+                <li1><a href="Gallery.html">Gallery</a></li1>
+                <li1><a href="Site Map.html">Site Map</a></li1>
+                <li1><a href="Quiz.html">User Profile</a></li1>
+            </ul>
+        </nav>
+    </header>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Quiz.css">
+  <title>Personal Details</title>
+</head>
+<body>
+  <div id="container">
+    <div id="question-container">
+      <h2 style="text-align: center;">Let us know about you ...</h2>
+      <div class="question-group">
+        <div class="question-item">
+          <h3 class="question">What is your name?</h3>
+          <input type="text" class="answer">
+        </div>
+        <div class="question-item">
+          <h3 class="question">What is your surname?</h3>
+          <input type="text" class="answer">
+        </div>
+        <div class="question-item">
+          <h3 class="question">What is your age?</h3>
+          <input type="text" class="answer">
+        </div>
+        <div class="question-item">
+          <h3 class="question">What is your gender?</h3>
+          <input type="text" class="answer">
+        </div>
+      </div>
+      <button id="next-btn">Next</button>
+    </div>
+    <div id="output-container">
+      <h2>Output</h2>
+      <div id="output"></div>
+      <a href="Quiz.html"><button id="finish-btn" onclick="confirmSaveChanges()">Finish</button></a>
+    </div>
+
+    
+    <div id="next-questions1" class="question-group" style="display: none;">
+      <div class="question-item">
+        <h3 class="question">What is your current educational level?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Do you have any specific academic goals or aspirations you'd like to share?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">What are the favourite subjects of you?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Are there any particular areas within your chosen subjects that you'd like to focus on?</h3>
+        <input type="text" class="answer">
+      </div>
+    </div>
+
+    <div id="next-questions2" class="question-group" style="display: none;">
+      <div class="question-item">
+        <h3 class="question">Fantastic! How do you prefer to learn? (e.g., reading textbooks, watching videos, attending lectures)</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Have you participated in any extracurricular activities or clubs related to education?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Is there any additional information you'd like to share about your academic background or achievements?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">would you like to receive updates and newsletters on educational resources and opportunities?</h3>
+        <input type="text" class="answer">
+      </div>
+    </div>
+
+    <div id="next-questions3" class="question-group" style="display: none;">
+      <div class="question-item">
+        <h3 class="question">Finally...When are you available to learn with us?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">How should we contact you?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Any days or times you can't contact us?</h3>
+        <input type="text" class="answer">
+      </div>
+      <div class="question-item">
+        <h3 class="question">Share your phone number and email?</h3>
+        <input type="text" class="answer">
+      </div>
+    </div>
+  </div>
+
+  <div class = "footer-container">
+    <div class = "footer-logo">
+        <img src ="logo.png" class ="footer-logo">
+    </div>
+
+    <div class = "footer-column1">
+        <h2>ABOUT</h2>
+        <a href="Home.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Shop.html">Shop</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="student_3.html">Editor's Page</a>
+    </div>
+
+    <div class = "footer-column2">
+        <h2>CONTACT</h2>
+        <p3>23/1A, 1st Floor</p3>
+        <p3>Hampdon Lane,</p3>
+        <p3>Bamabalapitiya,</p3>
+        <p3>Colombo 04</p3>
+        <br>
+        <p3>+94 11 278 2343</p3>
+        <p3>PrimeED@gmail.com</p3>
+    </div>
+
+    <div class = "footer-column3">
+        <h2>FEEDBACK FORM</FORM></h2>
+        <button id="FeedBackForm" onclick="window.location.href='FeedBack_Form.html'"">Feedback Form</button>
+    </div>
+  </div>
+
+<script src="Quiz.js"></script>
+</body>
+</html>
