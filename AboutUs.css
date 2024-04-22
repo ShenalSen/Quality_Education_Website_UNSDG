@@ -1,0 +1,325 @@
+*{	font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: #dbdbdb;
+}
+
+.navbar {
+    position: fixed;
+    height: 120px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #c22133;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-left: 0%;
+}
+
+.navbar a {
+
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.logo {
+	width: 165px;
+	cursor: pointer;
+    margin-left: 25px;
+	margin-right: 25px;
+	float: left;
+}
+
+li1{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	display: inline-block;
+	padding: 20px 35px;
+}
+
+.userprofile {
+
+	font-weight: 200;
+}
+
+li1 a{
+	display:inline-block;
+	text-decoration: none;
+	color:white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+
+li1 a:hover {
+	color: #000000;
+}
+
+.container {
+    align-items: center;
+    max-width: 1000px;
+    margin: 150px auto 0; /* Add margin to the top to create a gap between navbar and content */
+    padding: 20px;
+    position: relative;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 45px;
+}
+
+h4 {
+    text-align: center;
+    font-size: medium;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-1,
+.profile-2,
+.profile-3,
+.profile-4 {
+    text-align: center;
+    margin-bottom: 5px;
+    width: calc(25% - 1px); 
+}
+
+.profile-1-img,
+.profile-2-img,
+.profile-3-img,
+.profile-4-img {
+    width: 250px;
+    
+}
+
+.profile-1 p,
+.profile-2 p,
+.profile-3 p,
+.profile-4 p {
+    margin: 5px;
+    text-align:left;
+    position: relative;
+}
+
+.informations{
+    position: absolute;
+    width: 23%;
+    height: 40%;
+    padding: 10px;
+    background-color: #c22133;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center; /* Center align the content */
+}
+
+/* Simplify the hover effect for .informations */
+
+.informations2{
+    position: absolute;
+    width: 23%;
+    height: 40%;
+    padding: 10px;
+    background-color: #c22133;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center; /* Center align the content */
+}
+
+.informations3{
+    position: absolute;
+    width: 23%;
+    height: 40%;
+    padding: 10px;
+    background-color: #c22133;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center; /* Center align the content */
+}
+
+.informations4{
+    position: absolute;
+    width: 23%;
+    height: 40%;
+    padding: 10px;
+    background-color: #c22133;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+    justify-content: center; /* Center align the content */
+}
+
+.profile-1:hover .informations,
+.profile-2:hover .informations2,
+.profile-3:hover .informations3,
+.profile-4:hover .informations4{
+
+    opacity: 1;
+}
+
+.informations h3{
+    margin:  0;
+    text-align: center;
+}
+
+.informations p{
+    margin: 5px 0;
+    text-align: left;
+}
+
+
+.footer-container {
+    font-size: 16px;
+    background-color: #c22133;
+    padding-top:20px;
+    padding-bottom: 8px;
+    width: 100%;
+    display: flex;
+    margin-top: 250px; /* Add margin to the top to create a gap between navbar and footer */
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f3d153;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+.footer {
+	background-color:black;
+	width: 80%;
+	height: 40vh;
+	color: #ddd;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+
+.footer-logo {
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 70px;
+	cursor: pointer;
+}
+
+
+.footer-column1 {
+	display: flex;
+    text-align: center;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-left: 60px;
+	margin-right: 100px;
+}
+
+
+.footer-column1 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+	margin-left: 80px;
+}
+
+
+.footer-column1 a:hover {
+	color: #000000;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column2 {
+	display: flex;
+    text-align: center;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	margin-left: 70px;
+	margin-right: 100px;
+	color: #f6f1f1;
+}
+
+
+.footer-column2 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+
+}
+
+
+.footer-column2 a {
+	color: #ddd;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+
+.footer-column2 a:hover {
+	color: #000000;;
+	transition-duration: 0.4s;
+}
+
+
+.footer-column3 {
+    text-align: center;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 200px;
+}
+
+
+.footer-column3 h2 {
+	color: #000000;
+	font-size: 22px;
+	margin-bottom: 30px;
+	margin-right: 5px;
+}
